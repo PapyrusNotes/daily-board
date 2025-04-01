@@ -4,6 +4,9 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/left_widget.css"/>
+        <link rel="stylesheet" href="css/center_widget.css"/>
+        <link rel="stylesheet" href="css/right_widget.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <title>DailyBoard | Welcome</title>
     </head>
@@ -12,11 +15,11 @@
             <div id="board-left">
 
                 <div class="first-row">
-                    <div id="yesterday_todo">
+                    <div id="yesterday-todo">
                         yesterday todo
                     </div>
                     <div id="weather">
-                        weahter info
+                        weahter & date info
                     </div>
                 </div>
 
@@ -28,65 +31,81 @@
                 </div>
 
                 <div class="third-row">
-                    <form id="todo-form">
-                        <input type="text" placeholder="type your todo"/>
-                    </form>
-                    <ul id="todo-list">
-                    </ul>
+                    <div id="today-todo">
+                        <form id="todo-form">
+                            <input type="text" placeholder="type your todo"/>
+                        </form>
+                        <ul id="todo-list">
+                        </ul>
+                    </div>
                 </div>
 
             </div>
 
             <div id="board-center">
-                <div id="clock">
-                    <h2 id="clock">clock</h2>
-                    <button>toggle</button>
+                <div class="first-row">
+                    <div id="clock">
+                        <h2 id="clock">clock</h2>
+                        <label>
+                            <input class= "am-pm-switch" role="am-pm-switch" type="checkbox"/>
+                        <label>
+                    </div>
                 </div>
-
-                <form class="hidden" id="login-form">
-                    <input
-                        required
-                        maxlength="15"
-                        type="text"
-                        placeholder="What is your name?"
-                    />
-                </form>
-                <h1 id="greeting" class="hidden">Hello, yourname</h1>
-
-                <div id="time-remaining">
-                    <button>toggle</button>
-                    <h2 id="remaining_time">reamining_time</h2>
+                
+                <div class="second-row">
+                    <div id="greeting">
+                        <form class="hidden" id="login-form">
+                            <input
+                                required
+                                maxlength="15"
+                                type="text"
+                                placeholder="What is your name?"
+                            />
+                        </form>
+                        <h1 id="greeting-msg" class="hidden">Hello, yourname</h1>
+                    </div>
                 </div>
-
-                <button> BG color Palatte </button>
-
+                
+                <div class="third-row">
+                    <div id="time-remaining">
+                        <label>
+                            <input class="remaining-time-switch" role="remaining-time-switch" type="checkbox"/>
+                        <label>
+                        <h2 id="remaining_time">reamining_time</h2>
+                    </div>
+                </div>
             </div>
 
             <div id="board-right">
-                <div id="youtube_music_player">
-                    <ifrmae>youtube music player</ifrmae>
+                <div class="first-row">
+                    <div id="music-player">
+                        <div id="contorl-panel">
+                            <button>play&pause</button>
+                            <input type="range" min="0" max="100" />
+                        </div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MK8NphFMu7U?si=JKE2GtNDRS58fqy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
                 </div>
 
-                <div id="profile">
-                    profile
+                <div class="second-row">
+                    <div id="profile">
+                        profile
+                    </div>
+                </div>
+                
+                <div class="third-row">
+                    <div id="task-done">
+                        task_done
+                    </div>
                 </div>
 
-                <div id="task_done">
-                    task_done
-                <div>
             </div>
         </div>
+        
+        <footer>
+            <p>DailyBoard 0.1.0 by PapyrusPaper</p>
+        </footer>
 
-
-
-
-
-
-
-        <div id="weather">
-            <span></span>
-            <span></span>
-        </div>
         <script src="js/guide.js"></script>
 
         <script src="js/quotes.js"></script>
@@ -103,4 +122,7 @@
         <script src="js/task/task_done.js"></script>
 
     </body>
+
+
+
 </html>
