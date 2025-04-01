@@ -1,0 +1,78 @@
+#board-center > .first-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 30%;
+
+    justify-content: space-evenly;
+}
+
+#board-center > .second-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 30%;
+
+    justify-content: space-evenly;
+}
+
+#board-right > .third-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 30%;
+
+}
+
+
+#music-player {
+    width: 20vw;
+    height: 10vh;
+
+    justify-content: space-evenly;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
+#music-player > iframe{
+    width: 20vw;
+    height: 15vh;
+}
+
+
+#profile {
+    width: 20vw;
+    height: 25vh;
+
+    justify-content: space-evenly;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
+#task-done {
+    width: 20vw;
+    height: 60vh;
+
+    justify-content: space-evenly;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
+/*theme_palatte {
+
+}*/

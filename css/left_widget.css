@@ -1,0 +1,67 @@
+#board-left > .first-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 30%;
+
+    justify-content: space-evenly;
+}
+
+#board-left > .second-row {
+    display: flex;
+    flex-direction: row;
+
+    height: 30%;
+
+    justify-content: space-evenly;
+}
+
+#yesterday-todo {
+    width: 10vw;
+    height: 20vh;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+
+}
+
+#weather {
+    width: 10vw;
+    height: 20vh;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
+#quote {
+    width: 20vw;
+    height: 20vh;
+    
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
+#today-todo {
+    width: 20vw;
+    height: 20vh;
+
+    border-style: solid;
+    border-color: #148e8a;
+    border-width:5px;
+    border-radius: 5%;
+
+    background-color: #148e8a;
+}
+
