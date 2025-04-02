@@ -1,11 +1,5 @@
 const clockTitle = document.querySelector('#remaining_time');
-clockTitle.innerText = '000d 00h 00m 00s';
-
-const NOW = new Date();
-const Deadline = NOW.setDate(NOW.getDate() + 1);
-Deadline.setHours(0);
-Deadline.setMinutes(0);
-Deadline.setSeconds(0);
+clockTitle.innerText = '00h 00m 00s';
 
 const SEC_IN_MS = 1000;
 const MIN_IN_SEC = 60;
@@ -23,8 +17,15 @@ function millisecondsToStr(millisecondsGap){
 }
 
 function updateTime() {
-    const date = new Date();
-    const millisecondsGap = Deadline - date;
+    const now = new Date();
+    const nowMiliseconds = now.getTime();
+
+    const milisecondsToday = now.setHours(0, 0, 0);
+
+    const dateToday = new Date(milisecondsToday);
+    const Deadline = dateToday.setDate(dateToday.getDate() + 1);
+
+    const millisecondsGap = Deadline - nowMiliseconds;
 
     if (millisecondsGap < 0){
         clockTitle.innerText = "Deadline already passed ! "
