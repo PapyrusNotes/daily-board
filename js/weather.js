@@ -1,4 +1,4 @@
-const API_KEY = "2d786e760581583fff4825e60b4d37af";
+const API_KEY = "";
 
 function onGeoOK(position) {
     const lat = position.coords.latitude;
@@ -8,10 +8,15 @@ function onGeoOK(position) {
     fetch(url)
     .then(response => response.json())
     .then((data) => {
+
+
         const weather = document.querySelector("#weather span:first-child");
         const city = document.querySelector("#weather span:last-child");
-        weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-        city.innerText = data.name;
+        // weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+        // city.innerText = data.name;
+        weather.innerText = "흐림";
+
+        city.innerText = "과천시";
     });
 }
 
