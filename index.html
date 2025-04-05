@@ -16,15 +16,20 @@
 
                 <div class="first-row">
                     <div id="yesterday-todo">
-                        yesterday todo
+                        <div class="visible-widget-title">Yesterday todo</div>
+                        contents
                     </div>
                     <div id="weather">
-                        weahter & date info
+                        <div class="hidden-widget-title">Weather</div>
+                        <span class="weather">흐림</span>
+                        <span class="city">과천시</span>
+                        <span class="temperature">16 °C</span>
                     </div>
                 </div>
 
                 <div class="second-row">
                     <div id="quote">
+                        <div class="visible-widget-title">Today's Quote</div>
                         <span>This is a quote</span>
                         <span>This is a quote</span>
                     </div>
@@ -32,6 +37,7 @@
 
                 <div class="third-row">
                     <div id="today-todo">
+                        <div class="visible-widget-title">To-do</div>
                         <form id="todo-form">
                             <input type="text" placeholder="type your todo"/>
                         </form>
@@ -62,7 +68,6 @@
                                 placeholder="What is your name?"
                             />
                         </form>
-                        <h1 id="greeting-msg" class="hidden">Hello, yourname</h1>
                     </div>
                 </div>
                 
@@ -89,13 +94,30 @@
 
                 <div class="second-row">
                     <div id="profile">
-                        profile
+                        <div class="hidden-widget-title">
+                            Profile
+                        </div>
+                        <form >
+                        <div class="profile-img">
+                            <img class="portrait-img" src="./imgs/default_portrait.jpg" width="100px" height="100px"/>
+                            <input type="file" id="portrait-img-input">
+                            <button id="upload-portrait">Choose File</button>
+                        </div>
+                        <div class="profile-name">
+                            profile-name
+                        </div>
+                        <div class="profile-links">
+                            <a>link</a>
+                            <a>link</a>
+                            <a>link</a>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="third-row">
                     <div id="task-done">
-                        task_done
+                        <div class="visible-widget-title">Finished Tasks</div>
+                        contents
                     </div>
                 </div>
 
@@ -108,18 +130,24 @@
 
         <script src="js/guide.js"></script>
 
-        <script src="js/quotes.js"></script>
+        <!--script src="js/quotes.js"></script-->
         <script src="js/weather.js"></script>
-        <script src="js/youtube.js"></script>
+        <script src="js/music.js"></script>
         <script src="js/greetings.js"></script>
+        <script src ="js/profile.js"></script>
         <script src="js/background.js"></script>
 
         <script src="js/time/clock.js"></script>
-        <script src="js/time/reamining_time.js"></script>
+        <script src="js/time/deadline.js"></script>
 
         <script src="js/task/yesterday_todo.js"></script>
         <script src="js/task/today_todo.js"></script>
         <script src="js/task/task_done.js"></script>
+
+        <script>
+            const portraitURL = localStorage.getItem('my-portrait-img');
+            portraitImage.src = portraitURL;
+        </script>
 
     </body>
 

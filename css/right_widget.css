@@ -19,9 +19,6 @@
 #board-right > .third-row {
     display: flex;
     flex-direction: row;
-
-    height: 30%;
-
 }
 
 
@@ -32,16 +29,16 @@
     justify-content: space-evenly;
 
     border-style: solid;
-    border-color: #148e8a;
-    border-width:5px;
-    border-radius: 5%;
+    border-color: #EF7B45;
+    border-width: 5px;
+    border-radius: 30px;
 
-    background-color: #148e8a;
+    background-color: #EF7B45;
 }
 
 #music-player > iframe{
-    width: 20vw;
-    height: 15vh;
+    width: 10vw;
+    height: 5vh;
 }
 
 
@@ -49,26 +46,35 @@
     width: 20vw;
     height: 25vh;
 
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
 
     border-style: solid;
     border-color: #148e8a;
-    border-width:5px;
-    border-radius: 5%;
+    border-width: 5px;
+    border-radius: 30px;
 
     background-color: #148e8a;
 }
 
+#profile > .profile-links {
+    display: flex;
+    flex-direction: column;
+
+    color:white;
+}
+
 #task-done {
     width: 20vw;
-    height: 60vh;
+    height: 50vh;
 
     justify-content: space-evenly;
 
     border-style: solid;
     border-color: #148e8a;
-    border-width:5px;
-    border-radius: 5%;
+    border-width: 5px;
+    border-radius: 30px;
 
     background-color: #148e8a;
 }

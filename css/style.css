@@ -40,7 +40,21 @@ body {
 
     margin:1%;
     align-items: flex-start;
+    justify-content: space-between;
 }
+
+.visible-widget-title {
+    text-indent: 10%;
+    font-family: 'Palantino Linotype';
+    color: #EF7B45;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.hidden-widget-title {
+    visibility: hidden;
+}
+
 
 footer {
     width:100vw;
