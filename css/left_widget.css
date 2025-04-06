@@ -1,3 +1,7 @@
+@import "./weather.css";
+@import "./quote.css";
+@import "./todo.css";
+
 #board-left > .first-row {
     display: flex;
     flex-direction: row;
@@ -15,55 +19,3 @@
 
     justify-content: space-evenly;
 }
-
-#yesterday-todo {
-    width: 8vw;
-    height: 20vh;
-    margin: 0vh 1vw;
-
-    border-style: solid;
-    border-color: #148e8a;
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-
-}
-
-#weather {
-    width: 8vw;
-    height: 20vh;
-    margin: 0vh 1vw;
-
-
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-    background-image: url("../imgs/weather_bg/weather_cloudy_cropped.png");
-}
-
-#quote {
-    width: 20vw;
-    height: 15vh;
-    
-    border-style: solid;
-    border-color: #148e8a;
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-}
-
-#today-todo {
-    width: 20vw;
-    height: 20vh;
-
-    border-style: solid;
-    border-color: #148e8a;
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-}
-

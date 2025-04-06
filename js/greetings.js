@@ -1,6 +1,7 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
+const myName = document.querySelector('#profile .profile-name');
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
@@ -9,8 +10,9 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 
 function paintGreetings(username){
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `Hello, ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    myName.innerText = username;
 }
 
 function onLoginSubmit(event) {

@@ -1,0 +1,31 @@
+#time-remaining {
+    width: 50vw;
+    height: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    color: #d4edf4;
+}
+
+#time-remaining > .deadline-label {
+    background-color: #148e8a;
+    border-style: solid;
+    border-color: #148e8a;
+    border-width: 5px;
+    border-radius: 10px;
+
+    text-align: center;
+
+    color:#EF7B45;
+    font-weight: bold;
+}
+
+#remaining-time {
+    background-color: #0c635d;
+    border-style: solid;
+    border-color: #0c635d;
+    border-width: 5px;
+    border-radius: 20px;
+}

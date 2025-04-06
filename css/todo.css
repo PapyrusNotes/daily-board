@@ -1,0 +1,41 @@
+#todo {
+    width: 20vw;
+    height: 40vh;
+
+    background-color: #148e8a;
+    border-style: solid;
+    border-color: #148e8a;
+    border-width: 5px;
+    border-radius: 10px;
+
+    align-content: space-between;
+
+    & .visible-widget-title {
+        margin-bottom: 1vh;
+    }
+
+    & input {
+        width: 15vw;
+        height: 3vh;
+        
+        background-color: #d4edf4;
+        border: 0;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 10px;
+        margin-left: 1vw;
+
+        font-size: 15px;
+        font-family: 'Arial';
+    }
+
+    & #todo-list {
+        background-color: #d4edf4;
+        border-width: 1px;
+        border-radius: 10px;
+
+        color: black;
+    }
+
+}
+

@@ -15,31 +15,28 @@
             <div id="board-left">
 
                 <div class="first-row">
-                    <div id="yesterday-todo">
-                        <div class="visible-widget-title">Yesterday todo</div>
-                        contents
-                    </div>
                     <div id="weather">
-                        <div class="hidden-widget-title">Weather</div>
-                        <span class="weather">흐림</span>
-                        <span class="city">과천시</span>
-                        <span class="temperature">16 °C</span>
+                        <div class="weather-city"></div>
+                        <div class="weather-weather"></div>
+                        <div class="weather-temperature"></div>
                     </div>
                 </div>
 
                 <div class="second-row">
                     <div id="quote">
                         <div class="visible-widget-title">Today's Quote</div>
-                        <span>This is a quote</span>
-                        <span>This is a quote</span>
+                        <span>
+                            <p>This is a quote</p>
+                            <p>This is a author</p>
+                        </span>
                     </div>
                 </div>
 
                 <div class="third-row">
-                    <div id="today-todo">
+                    <div id="todo">
                         <div class="visible-widget-title">To-do</div>
                         <form id="todo-form">
-                            <input type="text" placeholder="type your todo"/>
+                            <input type="text" placeholder="Type your to-do"/>
                         </form>
                         <ul id="todo-list">
                         </ul>
@@ -52,9 +49,6 @@
                 <div class="first-row">
                     <div id="clock">
                         <h2 id="clock">clock</h2>
-                        <label>
-                            <input class= "am-pm-switch" role="am-pm-switch" type="checkbox"/>
-                        <label>
                     </div>
                 </div>
                 
@@ -73,10 +67,10 @@
                 
                 <div class="third-row">
                     <div id="time-remaining">
-                        <label>
-                            <input class="remaining-time-switch" role="remaining-time-switch" type="checkbox"/>
-                        <label>
-                        <h2 id="remaining_time">reamining_time</h2>
+                        <div class="deadline-label">
+                            Deadline
+                            <div id="remaining-time"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -85,10 +79,10 @@
                 <div class="first-row">
                     <div id="music-player">
                         <div id="contorl-panel">
-                            <button>play&pause</button>
-                            <input type="range" min="0" max="100" />
+                            <button id="play-pause">Play</button>
+                            <input id="volume" type="range" min="0" max="100"/>
                         </div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MK8NphFMu7U?si=JKE2GtNDRS58fqy3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div id="player"></div>
                     </div>
                 </div>
 
@@ -97,27 +91,20 @@
                         <div class="hidden-widget-title">
                             Profile
                         </div>
-                        <form >
                         <div class="profile-img">
-                            <img class="portrait-img" src="./imgs/default_portrait.jpg" width="100px" height="100px"/>
-                            <input type="file" id="portrait-img-input">
-                            <button id="upload-portrait">Choose File</button>
+                            <label for="portrait-img-input">
+                                <img class="portrait-img" src="./imgs/default_portrait.jpg" width="120px" height="120px"/>
+                            </label>
+                            <input type="file" accept="image/*" id="portrait-img-input">
                         </div>
                         <div class="profile-name">
                             profile-name
                         </div>
                         <div class="profile-links">
-                            <a>link</a>
-                            <a>link</a>
-                            <a>link</a>
+                            <a></a>
+                            <a></a>
+                            <a></a>
                         </div>
-                    </div>
-                </div>
-                
-                <div class="third-row">
-                    <div id="task-done">
-                        <div class="visible-widget-title">Finished Tasks</div>
-                        contents
                     </div>
                 </div>
 
@@ -125,12 +112,10 @@
         </div>
         
         <footer>
-            <p>DailyBoard 0.1.0 by PapyrusPaper</p>
+            <p>DailyBoard 0.2.0 by PapyrusPaper</p>
         </footer>
 
-        <script src="js/guide.js"></script>
-
-        <!--script src="js/quotes.js"></script-->
+        <script src="js/quotes.js"></script>
         <script src="js/weather.js"></script>
         <script src="js/music.js"></script>
         <script src="js/greetings.js"></script>
@@ -140,14 +125,8 @@
         <script src="js/time/clock.js"></script>
         <script src="js/time/deadline.js"></script>
 
-        <script src="js/task/yesterday_todo.js"></script>
-        <script src="js/task/today_todo.js"></script>
-        <script src="js/task/task_done.js"></script>
+        <script src="js/task/todo.js"></script>
 
-        <script>
-            const portraitURL = localStorage.getItem('my-portrait-img');
-            portraitImage.src = portraitURL;
-        </script>
 
     </body>
 

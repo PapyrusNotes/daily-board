@@ -1,4 +1,4 @@
-const clockTitle = document.querySelector('#remaining_time');
+const clockTitle = document.querySelector('#remaining-time');
 clockTitle.innerText = '00h 00m 00s';
 
 const SEC_IN_MS = 1000;

@@ -1,0 +1,33 @@
+#music-player {
+    width: 20vw;
+    height: 3vh;
+
+    justify-content: space-evenly;
+
+    border-style: solid;
+    border-color: #EF7B45;
+    border-width: 5px;
+    border-radius: 10px;
+
+    background-color: #EF7B45;
+}
+
+#music-player > iframe{
+    width: 0vw;
+    height: 0vh;
+}
+
+#play-pause {
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: #148e8a; 
+    width: 5vw; 
+    height: 3vh;
+    margin : 0.5px;
+
+    color : #d4edf4;
+}
+
+#volume {
+    margin-left: 2vw;
+}

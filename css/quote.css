@@ -1,0 +1,18 @@
+#quote {
+    width: 20vw;
+    height: 15vh;
+    
+    border-style: solid;
+    border-color: #148e8a;
+    border-width: 5px;
+    border-radius: 10px;
+    background-color: #148e8a;
+
+    & span{
+        color:#d4edf4;
+
+        & p:last-child {
+            text-align: right;
+        }
+    }
+}

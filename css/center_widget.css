@@ -1,124 +1,31 @@
+@import "./clock.css";
+@import "./greeting.css";
+@import "./deadline.css";
+
+
+
 #board-center > .first-row {
     display: flex;
     flex-direction: row;
 
-    height: 30%;
+    height: 5%;
 
     justify-content: space-evenly;
 }
 
 #board-center > .second-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 
-    height: 20%;
-
-    justify-content: space-evenly;
+    height: 10%;
+    align-items: center;
 }
 
-
-
-#clock {
-    width: 40vw;
-    height: 20vh;
-
+#board-center > .third-row {
     display: flex;
-    flex-direction: row;
-    
-    justify-content: space-evenly;
+    flex-direction: column;
 
-    border-style: solid;
-    border-color: #148e8a;
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-
-    color:#EF7B45;
-    font-size: 2.5em;
+    height: 10%;
     align-items: center;
-    
-}
 
-[type="checkbox"] {
-    appearance: none;
-    position: relative;
-    border: max(2px, 0.1em) solid #d4edf4;
-    border-radius: 1.25em;
-    width: 80px;
-    height: 41px;
-}
-
-
-[class="am-pm-switch"]::before {
-    content: "24h";
-    align-content: center;
-    text-align: center;
-    color:black;
-    font-weight: bold;
-
-    position: absolute;
-    left: 0px;
-    right: 40px;
-    bottom: 1px;
-    width: 35px;
-    height: 35px;
-    border-radius: 1.25em;
-    transform: scale(1.2);
-    background-color: #d4edf4;
-    transition: 200ms linear;
-}
-
-
-[type="checkbox"]:checked::before{
-    left: 3em;
-}
-
-[type="checkbox"]:checked{
-    border-color: #d4edf4;
-}
-
-[class="remaining-time-switch"]::before {
-    content: "Off";
-    align-content: center;
-    text-align: center;
-    color:black;
-    font-weight: bold;
-
-    position: absolute;
-    left: 0px;
-    right: 40px;
-    bottom: 1px;
-    width: 35px;
-    height: 35px;
-    border-radius: 1.25em;
-    transform: scale(1.2);
-    background-color: #d4edf4;
-    transition: 200ms linear;
-}
-
-#greeting {
-    width: 50vw;
-    height: 20vh;
-
-    border-radius: 10%;
-
-    color: white;
-    font-family: system-ui;
-    font-size: 2.5em;
-    align-items: center;
-}
-
-#time-remaining {
-    width: 50vw;
-    height: 20vh;
-
-    border-style: solid;
-    border-color: #148e8a;
-    border-width: 5px;
-    border-radius: 30px;
-
-    background-color: #148e8a;
-
-    color: white;
 }

@@ -1,10 +1,24 @@
-uploadFile = document.querySelector("#portrait-img-input");
-uploadBtn = document.querySelector("#upload-portrait");
-portraitImage = document.querySelector('#profile img');
+const uploadFile = document.querySelector("#portrait-img-input");
+const portraitImage = document.querySelector('#profile img');
+const profileName = document.querySelector('#profile .profile-name');
+ 
+const savedName = localStorage.getItem(USERNAME_KEY);
+const DEFAULT_PORTRAIT_URL = './imgs/default_portrait.jpg';
 
-uploadBtn.addEventListener('click', () => {
+if (savedName === null){
+    profileName.innerText = '<- Type your name';
+}
+else{
+    profileName.innerText = savedName;
+}
 
-})
+
+let portraitURL = localStorage.getItem('my-portrait-img');
+
+if (portraitURL === null){
+    portraitURL = DEFAULT_PORTRAIT_URL;
+}
+portraitImage.src = portraitURL;
 
 uploadFile.addEventListener('change', () => {
     
@@ -24,3 +38,6 @@ uploadFile.addEventListener('change', () => {
     });
 
 })
+
+
+

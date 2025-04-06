@@ -21,12 +21,17 @@ function deleteTodo(event) {
 function paintToDo(newTodoObj) {
     const li = document.createElement("li");
     li.id = newTodoObj.id;
+    li.setAttribute("style",
+        "display: flex;justify-content: space-between;align-items: center;"
+    )
 
     const span = document.createElement("span");
     span.innerText = newTodoObj.text;
 
     const button  = document.createElement("button");
-    button.innerText = "❌"
+    button.innerText = "X";
+    button.setAttribute("style",
+        "position:relative;right:2em;cursor:pointer;background-color:#EF7B45;border-radius:50px;border-color:#EF7B45;")
     button.addEventListener("click", deleteTodo);
 
     li.appendChild(span);
