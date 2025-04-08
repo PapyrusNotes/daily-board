@@ -1,4 +1,4 @@
-const OPENWEATHER_API_KEY = config.OPENWEATHER_API_KEY;
+const OPENWEATHER_API_KEY = config.api_key;
 const weatherWidget = document.querySelector("#weather");
 
 function paintWeatherWidget() {
