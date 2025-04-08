@@ -1,6 +1,6 @@
-const OPENWEATHER_API_KEY = config.api_key;
+const OPENWEATHER_API_KEY = config["apikey"];
 const weatherWidget = document.querySelector("#weather");
-
+// TO DO : Openweather API KEY 예외 처리
 function paintWeatherWidget() {
     weatherWidget.classList.remove(HIDDEN_CLASSNAME);
     weatherWidget.setAttribute("style","opacity:1");
