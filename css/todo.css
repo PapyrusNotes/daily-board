@@ -2,11 +2,11 @@
     width: 20vw;
     height: 40vh;
 
-    background-color: #148e8a;
+    background-color: #045B62;
     border-style: solid;
-    border-color: #148e8a;
+    border-color: #045B62;
     border-width: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 
     align-content: space-between;
 
@@ -20,7 +20,7 @@
         
         background-color: #d4edf4;
         border: 0;
-        border-radius: 15px;
+        border-radius: 5px;
         outline: none;
         padding-left: 10px;
         margin-left: 1vw;
@@ -32,7 +32,7 @@
     & #todo-list {
         background-color: #d4edf4;
         border-width: 1px;
-        border-radius: 10px;
+        border-radius: 5px;
 
         color: black;
     }

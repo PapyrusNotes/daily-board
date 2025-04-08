@@ -27,6 +27,9 @@ function paintToDo(newTodoObj) {
 
     const span = document.createElement("span");
     span.innerText = newTodoObj.text;
+    span.setAttribute("style",
+        "margin : 5px; padding:5px;"
+    )
 
     const button  = document.createElement("button");
     button.innerText = "X";

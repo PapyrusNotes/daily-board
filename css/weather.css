@@ -3,16 +3,27 @@
     height: 20vh;
 
 
-
     border-width: 5px;
-    border-radius: 10px;
-    background-color: #148e8a;
+    border-radius: 5px;
+    background-color: #045B62;
 
-    color:#EF7B45;;
+    color:#d4edf4;
     font-size: 2.0em;
     font-weight: bold;
 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
+    & .weather-city{
+        margin-left: 1vw;
+    }
+
+    & .weather-weather{
+        margin-left: 1vw;
+    }
+
+    & .weather-temperature{
+        margin-left: 1vw;
+    }
 }

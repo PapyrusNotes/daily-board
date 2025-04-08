@@ -3,10 +3,10 @@
     height: 15vh;
     
     border-style: solid;
-    border-color: #148e8a;
+    border-color: #045B62;
     border-width: 5px;
-    border-radius: 10px;
-    background-color: #148e8a;
+    border-radius: 5px;
+    background-color: #045B62;
 
     & span{
         color:#d4edf4;

@@ -7,7 +7,7 @@
     border-style: solid;
     border-color: #EF7B45;
     border-width: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 
     background-color: #EF7B45;
 }
@@ -18,7 +18,7 @@
 }
 
 #play-pause {
-    border-radius: 10px;
+    border-radius: 5px;
     border-width: 1px;
     background-color: #148e8a; 
     width: 5vw; 

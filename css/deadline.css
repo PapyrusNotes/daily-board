@@ -10,11 +10,11 @@
 }
 
 #time-remaining > .deadline-label {
-    background-color: #148e8a;
+    background-color: #045B62;
     border-style: solid;
-    border-color: #148e8a;
+    border-color: #045B62;
     border-width: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
 
     text-align: center;
 
@@ -23,9 +23,5 @@
 }
 
 #remaining-time {
-    background-color: #0c635d;
-    border-style: solid;
-    border-color: #0c635d;
-    border-width: 5px;
-    border-radius: 20px;
+    color : #d4edf4;
 }
