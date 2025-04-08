@@ -32,7 +32,7 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Generate API key file
         run: |
-          echo "const config = { apikey: '${{ secrets.OPENWEATHER_API_KEY }}' };" > apikey.js
+          echo "const config = {"apikey": `{{ secrets.OPENWEATHER_API_KEY }}`};" > apikey.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
