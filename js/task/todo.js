@@ -22,19 +22,31 @@ function paintToDo(newTodoObj) {
     const li = document.createElement("li");
     li.id = newTodoObj.id;
     li.setAttribute("style",
-        "display: flex;justify-content: space-between;align-items: center;"
+        "display: flex;\
+        justify-content: space-between;\
+        align-items: center;\
+        margin-top:1vh;\
+        margin-bottom:1vh;\
+        backround-color:#114443;"
     )
 
     const span = document.createElement("span");
     span.innerText = newTodoObj.text;
     span.setAttribute("style",
-        "margin : 5px; padding:5px;"
+        "margin : 5px;\
+        padding:5px;\
+        background-color:#114443;"
     )
 
     const button  = document.createElement("button");
     button.innerText = "X";
     button.setAttribute("style",
-        "position:relative;right:2em;cursor:pointer;background-color:#EF7B45;border-radius:50px;border-color:#EF7B45;")
+        "position:relative;\
+         right:2em;\
+         cursor:pointer;\
+         background-color:#114443;\
+         color:#d4edf4"
+        )
     button.addEventListener("click", deleteTodo);
 
     li.appendChild(span);
