@@ -14,6 +14,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    opacity: 0;
+    transition: 2s;
     
     & .weather-city{
         margin-left: 1vw;
@@ -26,4 +29,6 @@
     & .weather-temperature{
         margin-left: 1vw;
     }
+
+
 }

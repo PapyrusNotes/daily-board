@@ -15,7 +15,7 @@
             <div id="board-left">
 
                 <div class="first-row">
-                    <div id="weather">
+                    <div id="weather" class="hidden">
                         <div class="weather-city"></div>
                         <div class="weather-weather"></div>
                         <div class="weather-temperature"></div>
@@ -81,6 +81,7 @@
                     <div id="music-player">
                         <div id="contorl-panel">
                             <button id="play-pause">Play</button>
+                            <img id="speaker-img" src="./imgs/speaker.png" width="20px" height="20px"/>
                             <input id="volume" type="range" min="0" max="100"/>
                         </div>
                         <div id="player"></div>
@@ -113,7 +114,7 @@
         </div>
         
         <footer>
-            <p>DailyBoard 0.2.0 by PapyrusPaper</p>
+            <p>DailyBoard 0.3.0 by PapyrusPaper</p>
         </footer>
 
         
@@ -125,8 +126,9 @@
         <script src ="js/profile.js"></script>
         <script src="js/quotes.js"></script>
         <script src="js/task/todo.js"></script>
-
-        <script src="js/weather.js"></script>
+        
+        <script src="js/weather/apikey.js"></script>
+        <script src="js/weather/weather.js"></script>
         <script src="js/music.js"></script>
 
 

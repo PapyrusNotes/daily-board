@@ -42,4 +42,4 @@ else{
     paintGreetings(savedUsername);
 }
 
-
+// TO DO: 이름 변경 - Transition 효과
