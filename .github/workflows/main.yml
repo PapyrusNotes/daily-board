@@ -36,7 +36,7 @@ jobs:
         run: echo "MY SECRET IS ${{ secrets.OPENWEATHER_API_KEY }}"
       - name: Generate API key file
         run: |
-          echo "const config = {apikey: '${{ secrets.OPENWEATHER_API_KEY }}' };" > ./apikey.js
+          echo "const config = {apikey: '${{ secrets.WEATHER_KEY }}' };" > ./apikey.js
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
