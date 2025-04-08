@@ -56,6 +56,10 @@ body {
     visibility: hidden;
 }
 
+.hidden{
+    visibility: hidden;
+}
+
 
 footer {
     width:100vw;
