@@ -27,7 +27,7 @@ function eraseGreetings(){
 }
 
 function paintLoginForm(){
-    loginForm.classList.remove(_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
     loginForm.classList.remove(FADEOUT_CLASSNAME);
     loginForm.classList.add(FADEIN_CLASSNAME);
 }
@@ -39,8 +39,6 @@ function eraseLoginForm(){
 
 function hideLoginForm(){
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    loginForm.classList.remove(FADEOUT_CLASSNAME);
-    loginForm.classList.add(FADEIN_CLASSNAME);
 }
 
 function amendGreetings(){
@@ -64,7 +62,7 @@ if (savedUsername === null){
     loginForm.addEventListener("submit", onLoginSubmit);
 }
 else{
+    hideLoginForm();
     paintGreetings(savedUsername);
-    eraseLoginForm();
 }
 

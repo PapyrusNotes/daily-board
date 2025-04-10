@@ -58,6 +58,7 @@ body {
 
 .hidden{
     visibility: hidden;
+    transition: 0s;
 }
 
 .fade-in {
