@@ -7,6 +7,9 @@
     align-items: center;
     
     color: #d4edf4;
+
+    opacity: 0;
+    transition: 2s;
 }
 
 #time-remaining > .deadline-label {

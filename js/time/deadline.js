@@ -1,3 +1,4 @@
+const deadline = document.querySelector('#time-remaining');
 const clockTitle = document.querySelector('#remaining-time');
 clockTitle.innerText = '00h 00m 00s';
 
@@ -36,5 +37,14 @@ function updateTime() {
     }
 }
 
+function paintDeadlineWidget() {
+    deadline.setAttribute("style","opacity:1");
+}
+paintDeadlineWidget();
+
 setInterval(updateTime, 1000);
+
+
+
+
 

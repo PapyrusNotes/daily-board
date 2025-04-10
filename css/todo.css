@@ -10,6 +10,9 @@
 
     align-content: space-between;
 
+    opacity: 0;
+    transition: 1s;
+
     & .visible-widget-title {
         margin-bottom: 1vh;
     }

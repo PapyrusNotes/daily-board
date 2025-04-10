@@ -1,4 +1,5 @@
-const clock = document.querySelector("h2#clock");
+const clockWidget = document.querySelector("#clock");
+const clock = document.querySelector("#clock-message");
 clock.innerText = "00:00:00";
 
 function getClock() {
@@ -9,5 +10,11 @@ function getClock() {
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
+function paintClockWidget() {
+    clockWidget.setAttribute("style","opacity:1");
+}
+paintClockWidget();
+
 getClock();
+
 setInterval(getClock, 1000);

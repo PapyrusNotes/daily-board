@@ -1,3 +1,4 @@
+const toDoWidget = document.querySelector("#todo");
 const toDoForm = document.getElementById("todo-form");
 const toDoInput = toDoForm.querySelector("input");
 const toDoList = document.getElementById("todo-list");
@@ -79,3 +80,9 @@ if (savedToDos !== null) {
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDo);
 }
+
+function paintToDoWidget() {
+    toDoWidget.setAttribute("style","opacity:1");
+}
+
+paintToDoWidget();

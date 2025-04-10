@@ -60,6 +60,16 @@ body {
     visibility: hidden;
 }
 
+.fade-in {
+    opacity:1;
+    transition: 1s;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: 1s;
+}
+
 
 footer {
     width:100vw;

@@ -8,7 +8,9 @@
     justify-content: space-evenly;
 
     color:#EF7B45;
-    font-size: 2.5em;
+    font-size: 3.5em;
     align-items: center;
     
+    opacity: 0;
+    transition: 2s;
 }

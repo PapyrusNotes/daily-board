@@ -56,11 +56,17 @@ const quotes = [
 
 ]
 
+const quoteWidget = document.querySelector("#quote");
 const quote = document.querySelector("#quote p:first-child");
 const author = document.querySelector("#quote p:last-child");
 todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = todaysQuote.quote;
-author.innerText = '- ' + todaysQuote.author;
+function paintQuoteWidget() {
+    quote.innerText = todaysQuote.quote;
+    author.innerText = '- ' + todaysQuote.author;
+    quoteWidget.setAttribute("style","opacity:1");
+}
+
+paintQuoteWidget();
 
 // TODO : Quote server

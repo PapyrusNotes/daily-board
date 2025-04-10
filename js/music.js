@@ -12,7 +12,7 @@ function onYouTubeIframeAPIReady() {
       videoId: 'W41eBhJD32c',
       playerVars: {
         'playsinline': 1,
-        'autoplay':0,
+        'autoplay':1,
         'controls':1
       },
       events: {
