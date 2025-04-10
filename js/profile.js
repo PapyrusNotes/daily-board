@@ -1,3 +1,5 @@
+const profileWidget = document.querySelector("#profile");
+
 const uploadFile = document.querySelector("#portrait-img-input");
 const portraitImage = document.querySelector('#profile img');
 const profileName = document.querySelector('#profile .profile-name');
@@ -39,5 +41,9 @@ uploadFile.addEventListener('change', () => {
 
 })
 
-
+function paintProfileWidget(){
+    profileWidget.setAttribute("style", "opacity:1");
+  }
+  
+  paintProfileWidget();
 

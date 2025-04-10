@@ -1,3 +1,5 @@
+const musicPlayer = document.querySelector('#music-player');
+
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 
@@ -40,6 +42,12 @@ function playHandler(){
 function volumeHandler(event){
     player.setVolume(event.target.value);
 }
+
+function paintMusicWidget(){
+  musicPlayer.setAttribute("style", "opacity:1");
+}
+
+paintMusicWidget();
 
 playpauseBtn = document.querySelector('#play-pause');
 playpauseBtn.addEventListener("click", playHandler);

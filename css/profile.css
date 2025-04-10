@@ -13,6 +13,9 @@
     border-width: 5px;
     border-radius: 5px;
 
+    opacity: 0;
+    transition: 1s;
+
     & label{
         cursor: pointer;
     }

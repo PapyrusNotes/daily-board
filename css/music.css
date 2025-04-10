@@ -11,13 +11,16 @@
 
     background-color: #EF7B45;
 
+    opacity: 0;
+    transition: 1s;
+    
     & iframe {
         width: 0vw;
         height: 0vh;
     }
 }
 
-#control-panel{
+#control-panel {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -35,7 +38,7 @@
     color : #d4edf4;
 }
 
-#speaker-img{
+#speaker-img {
     margin-left: 1vw;
 }
 
