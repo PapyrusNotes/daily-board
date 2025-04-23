@@ -26,6 +26,7 @@ https://developers.google.com/youtube/iframe_api_reference
 - Youtube 링크 업데이트 기능
 - 테마 컬러 팔렛트
 - 테마 1종
+- Profile : My Most valuable Tech Stack
 
 ### Sprint_2
 - Quote served from server

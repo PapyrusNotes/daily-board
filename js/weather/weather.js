@@ -19,12 +19,17 @@ function onGeoOK(position) {
     .then(response => response.json())
     .then((data) => {
         const city = document.querySelector("#weather .weather-city");
-        const weather = document.querySelector("#weather .weather-weather");
+        const weather = document.querySelector("#weather .weather-icon");
+        const weatherIcon = document.querySelector("#weather-icon");
         const temperature = document.querySelector("#weather .weather-temperature");
 
         city.innerText = data.name;
+        
         weather.innerText = `${data.weather[0].main}`;
         temperature.innerText = `${data.main.temp} °C`;
+        const iconCode = str(data.weather[0][icon]);
+        const iconURL = `https://openweathermap.org/img/wn/${iconCode}.png`;
+        weatherIcon.setAttribute("src",`${iconURL}`);
     })
     .then(() => {
         paintWeatherWidget();

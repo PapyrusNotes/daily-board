@@ -31,15 +31,27 @@
         font-size: 1.2em;
         font-weight: bold;
     }
-
-    & .profile-links {
-        display: flex;
-        flex-direction: column;
-    
-        color:#d4edf4;
-    }
     
 }
+
+.tech-links {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #114443;
+    border-width: 1px;
+    border-radius: 5px;
+
+    margin:5%;
+
+    & a:link, a:visited {
+        padding: 1rem;
+        color: #d4edf4;
+        text-decoration: solid;
+        cursor:pointer;
+    }
+}
+
 
 #portrait-img-input {
     visibility: hidden;
